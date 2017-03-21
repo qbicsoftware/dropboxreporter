@@ -1,5 +1,6 @@
 package life.qbic;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,6 +36,13 @@ public class LogParserTest {
         logParser.parse(logFile);
     }
 
+    @Test
+    public void parse_example_log_and_confirm_entries() throws IOException{
+        logParser.parse(logFile);
+        Assert.assertTrue("Collection should contain a key \'2015-06-03\'",logParser.getDateEventCollection().containsKey("2015-06-03"));
+        Assert.assertTrue("Collection should contain a key \'2015-07-10\'",logParser.getDateEventCollection().containsKey("2015-07-10"));
+        Assert.assertEquals("Collection should have date entries ", 2, logParser.getDateEventCollection().keySet().size());
+    }
 
 
 }

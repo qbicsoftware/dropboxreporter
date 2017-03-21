@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +15,7 @@ import java.util.Map;
 public class LogParser {
 
 
-    private Map<String, List> dateEventCollection;
+    private Map<String, List<LineParser>> dateEventCollection;
 
     public void parse(Path logFile) throws IOException{
 
@@ -33,10 +34,17 @@ public class LogParser {
     }
 
     private void lineParserHelper(String line){
+        try {
+            LineParser lineParser = new LineParser(line);
+            dateEventCollection.computeIfAbsent(lineParser.getDate(), k -> new ArrayList<>());
+            dateEventCollection.get(lineParser.getDate()).add(lineParser);
+        } catch (LineParserException exp){
+            System.err.println("Error in " + line);
+        }
 
     }
 
-    public Map<String, List> getDateEventCollection(){
+    public Map<String, List<LineParser>> getDateEventCollection(){
         return this.dateEventCollection;
     }
 }
