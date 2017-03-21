@@ -1,0 +1,17 @@
+2015-06-03 17:10:47,776 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115146_QC004004R5_P15890_1_hla.2.fastq.gz
+2015-06-03 17:10:47,777 dropboxhandler    line:136  (levelname)-8s File with barcode, but does not match an openbis dropbox: QC002007RJ_20150529115046__P15934_1_hla.2.fastq.gz
+2015-06-03 17:10:47,781 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115146_QC004004R5_P15890_1_hla.2.fastq.gz to OpenBis as QC004004R5_20150529115146__P15890_1_hla.2.fastq.gz
+2015-06-03 17:10:47,782 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115146_QC004004R5_P15890_1_hla.1.fastq.gz
+2015-06-03 17:10:47,783 dropboxhandler    line:136  (levelname)-8s File with barcode, but does not match an openbis dropbox: QC004004R5_20150529115146__P15890_1_hla.2.fastq.gz
+2015-06-03 17:10:47,798 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115146_QC004004R5_P15890_1_hla.1.fastq.gz to OpenBis as QC004004R5_20150529115146__P15890_1_hla.1.fastq.gz
+2015-06-03 17:10:47,800 dropboxhandler    line:136  (levelname)-8s File with barcode, but does not match an openbis dropbox: QC004004R5_20150529115146__P15890_1_hla.1.fastq.gz
+2015-06-03 17:10:47,801 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115246_QC004007RT_15890_2_somatic_missense.vcf
+2015-06-03 17:10:47,804 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115446_QC003004R0_P15780_1_hla.2.fastq.gz
+2015-06-03 17:10:47,807 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115446_QC003004R0_P15780_1_hla.1.fastq.gz
+2015-06-03 17:10:47,811 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150529115446_QC003007RO_15780_2_somatic_missense.vcf
+2015-06-03 17:10:47,814 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150601090046_QC003007RO_15780_2_somatic_missense.vcf
+2015-06-03 17:10:47,818 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150601095546_QC005004RA_S243_1_hla.1.fastq.gz
+2015-06-03 17:10:47,821 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150601095546_QC005004RA_S243_1_hla.2.fastq.gz
+2015-06-03 17:10:47,825 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150601095546_QC005007R0_S243_2_somatic_missense.vcf
+2015-06-03 17:10:48,075 dropboxhandler    line:224  (levelname)-8s manual intervention is required for /mnt/nfs/qbic/dropboxes/manual/dmcegat/20150529114946_QC002004RT_15934_2_somatic_missense.vcf
+2015-06-03 17:10:48,078 dropboxhandler    line:224  (levelname)-8s manual intervention is required for /mnt/nfs/qbic/dropboxes/manual/dmcegat/20150529114946_QC002007RJ_P15934_1_hla.1.fastq.gz
