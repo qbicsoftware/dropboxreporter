@@ -101,7 +101,7 @@ public class App
         projectSummaries.forEach(App::printStats);
 
         System.out.println("-------------------");
-        System.out.println("Files without barcode:");
+        System.out.format("Files without barcode: %s\n", listWithManualInterventions.size());
         listWithManualInterventions.forEach( e -> {
             System.out.format("Filepath:\t%s\n", e);
         });
