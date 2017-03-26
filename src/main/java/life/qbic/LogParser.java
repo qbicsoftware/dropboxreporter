@@ -39,7 +39,7 @@ public class LogParser {
             dateEventCollection.computeIfAbsent(lineParser.getDate(), k -> new ArrayList<>());
             dateEventCollection.get(lineParser.getDate()).add(lineParser);
         } catch (LineParserException exp){
-            System.err.println("Error in " + line);
+            //System.err.println("Error in " + line);
         }
 
     }

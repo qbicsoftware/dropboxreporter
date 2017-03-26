@@ -10,10 +10,13 @@ public class LineParser {
 
     private static final String DATE_REGEX = "(\\d{4}-\\d{2}-\\d{2})";
     private static final String BARCODE_REGEX = "(Q[A-X0-9]{4}[0-9]{3}[A-X][A-X0-9])";
+    private static final String FULL_PATH_REGEX = "([\\/][\\.]*)\\w+\\b(\\.*)+(.*)";
 
     private String date = "";
     private String source = "";
     private String barcode = "";
+    private Boolean manualIntervention = false;
+    private String file = "";
 
     public LineParser(String exampleLine) {
 
@@ -24,6 +27,12 @@ public class LineParser {
     private void parseLine(String line) {
 
         retrieveDate(line);
+
+        if(line.contains("manual intervention")){
+            manualIntervention = true;
+        }
+
+        findFilePath(line);
 
         if (line.contains("New file arrived")){
             retrieveSource(line);
@@ -83,4 +92,22 @@ public class LineParser {
     public String getBarcode() {
         return this.barcode;
     }
+
+    public Boolean requiresManualIntervention(){
+        return manualIntervention;
+    }
+
+    private void findFilePath(String line){
+        Pattern p = Pattern.compile(FULL_PATH_REGEX);
+        Matcher m = p.matcher(line);
+
+        if(m.find()){
+            file = m.group();
+        }
+    }
+
+    public String getFile(){
+        return this.file;
+    }
+
 }
