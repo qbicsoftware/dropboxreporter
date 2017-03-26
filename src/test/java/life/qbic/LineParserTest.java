@@ -59,16 +59,18 @@ public class LineParserTest {
 
     }
 
-
+    @Test
     public void extract_barcode(){
 
-        String lineWithBarcode = "New file arrived for dropbox qeana07-pct: " +
+        String lineWithBarcode = "2015-07-10 14:52:34,120 dropboxhandler    " +
+                "line:385  (levelname)-8s New file arrived for dropbox qeana07-pct: " +
                 "/mnt/nfs/qbic/dropboxes/qeana07_pct/incoming/" +
                 "20150619102730_QMJAC003AH_20150618091224_JDA1904S02AJDA1904S02A.mzML";
 
         LineParser lineParser = new LineParser(lineWithBarcode);
 
-        Assert.assertEquals("Barcode QMJAC003AH should have been found.", lineParser.getBarcode());
+        Assert.assertEquals("Barcode QMJAC003AH should have been found.",
+                "QMJAC003AH", lineParser.getBarcode());
 
 
     }
