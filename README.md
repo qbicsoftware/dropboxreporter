@@ -4,7 +4,7 @@ Reports stuff that happened on a particular day, based on the logs of the dropbo
 Developer: Sven Fillinger<br>
 E-mail: sven.fillinger@qbic.uni-tuebingen.de
 
-## How to use
+## How to use it
 Currently, the dropboxreporter only summarizes log events, given a certain date in format **'YYYY-MM-DD'**.
 
 ### Commandline interface
@@ -45,13 +45,13 @@ The line
 
      Project code: QSGPR
 
-obviously reports a summary for a found project code. All files with barcodes belonging to this particular project will be summarized as
+obviously reports a **summary** for a found **project code**. All files with barcodes belonging to this particular project will be summarized as
 
     numberOfManualIntervention: 0
     numberOfIncomingFiles: 2
     
-meaning the number files for the project that still need manual intervention (e.g. the target dropbox was wrong or there was no matching rule defined in the dropboxhandler config) and the total
-number of incoming files for that project are displayed.
+meaning the number files for the project that still need **manual intervention** (e.g. the target dropbox was wrong or there was no matching rule defined in the dropboxhandler config) and the **total
+number** of incoming files for that project are displayed.
 
 In case of incoming files that need manual intervention (because they don't carry a valid barcode or just have none), it will be summarized
 like in this example:
