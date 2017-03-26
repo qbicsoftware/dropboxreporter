@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="life.qbic.LineParserTest" time="0" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="life.qbic.LineParserTest" time="0" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2016.3.5"/>
+    <property name="idea.version" value="2017.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-jdk/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.121-b13"/>
@@ -12,7 +12,6 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7537"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -29,7 +28,7 @@
     <property name="os.name" value="Linux"/>
     <property name="classworlds.conf" value="/home/sven/IntelliJ/plugins/maven/lib/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/home/sven/IntelliJ/bin:/home/sven/IntelliJ/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.library.path" value="/home/sven/IntelliJ/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -38,14 +37,13 @@
     <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="idea.launcher.bin.path" value="/home/sven/IntelliJ/bin"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="sven"/>
     <property name="java.class.path" value="/home/sven/IntelliJ/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/home/sven/IntelliJ/lib/idea_rt.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-jdk/jre"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.3.5 clean:clean compiler:compile test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.1 clean:clean compiler:compile test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -63,5 +61,10 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
+  <testcase classname="life.qbic.LineParserTest" name="check_regex_matcher" time="0"/>
+  <testcase classname="life.qbic.LineParserTest" name="parse_line_and_get_dropboxname" time="0"/>
   <testcase classname="life.qbic.LineParserTest" name="parse_line_and_get_date" time="0"/>
+  <testcase classname="life.qbic.LineParserTest" name="parse_line_and_throw_exception" time="0"/>
+  <testcase classname="life.qbic.LineParserTest" name="check_barcode_regex" time="0"/>
+  <testcase classname="life.qbic.LineParserTest" name="extract_barcode" time="0"/>
 </testsuite>

@@ -15,3 +15,16 @@
 2015-06-03 17:10:47,825 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox dmcegat: /mnt/nfs/qbic/dropboxes/dmcegat/incoming/20150601095546_QC005007R0_S243_2_somatic_missense.vcf
 2015-06-03 17:10:48,075 dropboxhandler    line:224  (levelname)-8s manual intervention is required for /mnt/nfs/qbic/dropboxes/manual/dmcegat/20150529114946_QC002004RT_15934_2_somatic_missense.vcf
 2015-06-03 17:10:48,078 dropboxhandler    line:224  (levelname)-8s manual intervention is required for /mnt/nfs/qbic/dropboxes/manual/dmcegat/20150529114946_QC002007RJ_P15934_1_hla.1.fastq.gz
+2015-07-10 14:52:32,025 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox qeana05-mpc: /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150709114939_datamover_log.txt
+# Command line
+Failure line
+    with Stacktrace
+2015-07-10 14:52:34,120 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox qeana07-pct: /mnt/nfs/qbic/dropboxes/qeana07_pct/incoming/20150619102730_QMJAC003AH_20150618091224_JDA1904S02AJDA1904S02A.mzML
+2015-07-10 14:52:34,315 dropboxhandler    line:385  (levelname)-8s New file arrived for dropbox qeana07-pct: /mnt/nfs/qbic/dropboxes/qeana07_pct/incoming/20150619102730_QMJAC004AP_20150618091024_JDA1904S03AJDA1904S03A.mzML
+2015-07-10 14:53:15,662 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092228_FKL1661-S102-A-FFPE_26_Myo6_QKSFF093A2.raw to OpenBis as QKSFF093A2_20150707092228_FKL1661S102AFFPE_2
+2015-07-10 14:53:15,992 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092527_FKL1897-S02-A-m2_therapy_1_QXPPO013AE.raw to OpenBis as QXPPO013AE_20150707092527_FKL1897S02Am2_thera
+2015-07-10 14:53:21,126 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092527_FKL1897-S06-A-m2_therapy_2_QXPPO014AM.raw to OpenBis as QXPPO014AM_20150707092527_FKL1897S06Am2_thera
+2015-07-10 14:53:21,579 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092527_FKL1897-S10-A-m2_control_3_QXPPO019AS.raw to OpenBis as QXPPO019AS_20150707092527_FKL1897S10Am2_contr
+2015-07-10 14:53:43,928 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092727_FKL1897-S14-A-m2_control_4_QXPPO020AV.raw to OpenBis as QXPPO020AV_20150707092727_FKL1897S14Am2_contr
+2015-07-10 14:54:08,057 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092527_FKL1897-S18-A-m3_therapy_5_QXPPO015AU.raw to OpenBis as QXPPO015AU_20150707092527_FKL1897S18Am3_thera
+2015-07-10 14:54:08,395 dropboxhandler    line:153  (levelname)-8s Exporting /mnt/nfs/qbic/dropboxes/qeana05_mpc/incoming/20150707092527_FKL1897-S22-A-m3_therapy_6_QXPPO016A4.raw to OpenBis as QXPPO016A4_20

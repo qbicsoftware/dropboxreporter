@@ -1,3 +1,4 @@
 life/qbic/LineParser.class
+life/qbic/LineParserException.class
 life/qbic/LogParser.class
 life/qbic/App.class
