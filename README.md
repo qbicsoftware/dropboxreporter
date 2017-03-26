@@ -1,4 +1,6 @@
 # dropboxreporter
+[![Build Status](https://qbic-intranet.am10.uni-tuebingen.de/jenkins/buildStatus/icon?job=dropboxreporter&build=4)](https://qbic-intranet.am10.uni-tuebingen.de/jenkins/job/dropboxreporter/4/) [![codecov](https://codecov.io/gh/qbicsoftware/dropboxreporter/branch/development/graph/badge.svg)](https://codecov.io/gh/qbicsoftware/dropboxreporter)
+
 Reports stuff that happened on a particular day, based on the logs of the dropboxhandler.
 
 Developer: Sven Fillinger<br>
