@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.sound.sampled.Line;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -43,6 +44,32 @@ public class LineParserTest {
         Matcher m = p.matcher("2015-02-06 Blalala");
 
         Assert.assertTrue("Date pattern match should have worked.", m.find());
+
+    }
+
+    @Test
+    public void check_barcode_regex(){
+
+        String stringWithBarcode = "new_file_QQBIC000A2_whatsoever.fasta.gz";
+
+        Pattern p = Pattern.compile("(Q[A-X0-9]{4}[0-9]{3}[A-X][A-X0-9])");
+        Matcher m = p.matcher(stringWithBarcode);
+
+        Assert.assertTrue(String.format("Should have found a QBiC barcode in \'%s\'", stringWithBarcode), m.find());
+
+    }
+
+
+    public void extract_barcode(){
+
+        String lineWithBarcode = "New file arrived for dropbox qeana07-pct: " +
+                "/mnt/nfs/qbic/dropboxes/qeana07_pct/incoming/" +
+                "20150619102730_QMJAC003AH_20150618091224_JDA1904S02AJDA1904S02A.mzML";
+
+        LineParser lineParser = new LineParser(lineWithBarcode);
+
+        Assert.assertEquals("Barcode QMJAC003AH should have been found.", lineParser.getBarcode());
+
 
     }
 

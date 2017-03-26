@@ -8,8 +8,12 @@ import java.util.regex.Pattern;
  */
 public class LineParser {
 
+    private static final String DATE_REGEX = "(\\d{4}-\\d{2}-\\d{2})";
+    private static final String BARCODE_REGEX = "(Q[A-X0-9]{4}[0-9]{3}[A-X][A-X0-9])";
+
     private String date = "";
     private String source = "";
+    private String barcode = "";
 
     public LineParser(String exampleLine) {
 
@@ -23,7 +27,23 @@ public class LineParser {
 
         if (line.contains("New file arrived")){
             retrieveSource(line);
+            findBarcode(line);
         }
+    }
+
+    /**
+     * Try to find a QBiC barcode
+     * @param line A line possibly containing a barcode
+     */
+    private void findBarcode(String line) {
+
+        Pattern p = Pattern.compile(BARCODE_REGEX);
+        Matcher m = p.matcher(line);
+
+        if(m.find()){
+            this.barcode = m.group();
+        }
+
     }
 
     private void retrieveSource(String line) {
@@ -40,7 +60,7 @@ public class LineParser {
     }
 
     private void retrieveDate(String line) {
-        Pattern p = Pattern.compile("(\\d{4}-\\d{2}-\\d{2})");
+        Pattern p = Pattern.compile(DATE_REGEX);
         Matcher m = p.matcher(line);
 
         if (!m.find()){
@@ -58,5 +78,9 @@ public class LineParser {
 
     public String getSource() {
         return this.source;
+    }
+
+    public String getBarcode() {
+        return this.barcode;
     }
 }
