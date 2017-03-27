@@ -14,7 +14,7 @@ Currently, the dropboxreporter only summarizes log events, given a certain date 
 ### Commandline interface
 The dropboxreporter can be executed, after compiling the the source code. You can then summarize a log file by calling:
 
-    > dropboxhandler.jar [date] [/path/to/logfile.log]
+    > java -jar dropboxhandler.jar [date] [/path/to/logfile.log]
 
 Be aware that the **date** must have the **format** 'YYYY-MM-DD'.
 
