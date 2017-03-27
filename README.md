@@ -5,7 +5,7 @@ Reports stuff that happened on a particular day, based on the logs of the dropbo
 
 Developer: Sven Fillinger<br>
 E-mail: sven.fillinger@qbic.uni-tuebingen.de<br>
-Snapshots: [on Nexus RMS](https://peltzer.com.de/nexus/content/repositories/snapshots/life/qbic/dropboxreporter/1.0-SNAPSHOT/)<br>
+Snapshots: [v1.0](https://peltzer.com.de/nexus/content/repositories/snapshots/life/qbic/dropboxreporter/1.0-SNAPSHOT/)<br>
 Releases: n.A.
 
 ## How to use it
