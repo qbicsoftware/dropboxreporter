@@ -4,7 +4,9 @@
 Reports stuff that happened on a particular day, based on the logs of the dropboxhandler.
 
 Developer: Sven Fillinger<br>
-E-mail: sven.fillinger@qbic.uni-tuebingen.de
+E-mail: sven.fillinger@qbic.uni-tuebingen.de<br>
+Snapshots: [on Nexus RMS](https://peltzer.com.de/nexus/content/repositories/snapshots/life/qbic/dropboxreporter/1.0-SNAPSHOT/)<br>
+Releases: n.A.
 
 ## How to use it
 Currently, the dropboxreporter only summarizes log events, given a certain date in format **'YYYY-MM-DD'**.
