@@ -19,10 +19,27 @@
         </configuration>
       </plugin>
       <plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.7.7.201606060606</version>
-			</plugin>
+	  <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+	  <version>0.7.7.201606060606</version>
+     </plugin>
+     <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-jar-plugin</artifactId>
+	<configuration>
+	  <!-- DO NOT include log4j.properties file in your Jar -->
+	  <excludes>
+		<exclude>**/log4j.properties</exclude>
+		  <exclude>src/test/*</exclude>
+	  </excludes>
+	  <archive>
+		<manifest>
+			<!-- Jar file entry point -->
+			<mainClass>life.qbic.dropboxreporter.App</mainClass>
+		</manifest>
+	  </archive>
+	</configuration>
+      </plugin>
     </plugins>
   </build>
 
