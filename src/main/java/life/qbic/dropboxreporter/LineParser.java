@@ -1,4 +1,4 @@
-package life.qbic;
+package life.qbic.dropboxreporter;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

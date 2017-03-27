@@ -1,4 +1,4 @@
-package life.qbic;
+package life.qbic.dropboxreporter;
 
 import java.io.BufferedReader;
 import java.io.IOException;

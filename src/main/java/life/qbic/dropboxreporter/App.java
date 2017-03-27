@@ -1,4 +1,4 @@
-package life.qbic;
+package life.qbic.dropboxreporter;
 
 import java.io.IOException;
 import java.nio.file.Path;

@@ -1,5 +1,7 @@
-package life.qbic;
+package life.qbic.dropboxreporter;
 
+import life.qbic.dropboxreporter.LineParser;
+import life.qbic.dropboxreporter.LineParserException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

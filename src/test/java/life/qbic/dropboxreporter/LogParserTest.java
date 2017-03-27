@@ -1,5 +1,6 @@
-package life.qbic;
+package life.qbic.dropboxreporter;
 
+import life.qbic.dropboxreporter.LogParser;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,8 +8,6 @@ import org.junit.Test;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by sven on 3/21/17.
