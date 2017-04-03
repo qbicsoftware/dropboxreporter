@@ -1,5 +1,5 @@
 # dropboxreporter
-[![Build Status](https://qbic-intranet.am10.uni-tuebingen.de/jenkins/buildStatus/icon?job=dropboxreporter&build=4)](https://qbic-intranet.am10.uni-tuebingen.de/jenkins/job/dropboxreporter/4/) [![codecov](https://codecov.io/gh/qbicsoftware/dropboxreporter/branch/development/graph/badge.svg)](https://codecov.io/gh/qbicsoftware/dropboxreporter)
+[![Build Status](https://qbic-intranet.am10.uni-tuebingen.de/jenkins/buildStatus/icon?job=dropboxreporter&build=4)](https://qbic-intranet.am10.uni-tuebingen.de/jenkins/job/dropboxreporter/4/) [![codecov](https://codecov.io/gh/qbicsoftware/dropboxreporter/branch/development/graph/badge.svg)](https://codecov.io/gh/qbicsoftware/dropboxreporter) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 Reports stuff that happened on a particular day, based on the logs of the dropboxhandler.
 
